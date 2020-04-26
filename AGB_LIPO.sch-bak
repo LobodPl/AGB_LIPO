@@ -13,48 +13,151 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	5250 3300 5200 3300
+Wire Wire Line
+	5200 3600 5250 3600
+Wire Wire Line
+	5250 3600 5250 3650
+NoConn ~ 4450 3500
+NoConn ~ 4450 3400
+Wire Wire Line
+	5250 2950 5250 3300
 $Comp
-L misc:tp4056_board-tp4056 U1
-U 1 1 5E2E0507
+L AGB_LIPO:misc_tp4056_board-tp4056 U1
+U 1 1 5EA05227
 P 4600 3200
 F 0 "U1" H 4825 3325 50  0000 C CNN
-F 1 "tp4056_board-tp4056" H 4825 3234 50  0000 C CNN
-F 2 "misc_footprints:4056E_LiIon_loader" H 4600 3200 50  0001 C CNN
+F 1 "misc_tp4056_board-tp4056" H 4825 3234 50  0000 C CNN
+F 2 "kiCad_mod:TP4056-18650" H 4600 3200 50  0001 C CNN
 F 3 "" H 4600 3200 50  0001 C CNN
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D1
-U 1 1 5E2E0B2B
-P 5750 2900
-F 0 "D1" H 5750 3116 50  0000 C CNN
-F 1 "D" H 5750 3025 50  0000 C CNN
-F 2 "misc_footprints:Diode-hybrid-3pad" H 5750 2900 50  0001 C CNN
-F 3 "~" H 5750 2900 50  0001 C CNN
-	1    5750 2900
+L Device:R R1
+U 1 1 5EA0FDCF
+P 6550 2800
+F 0 "R1" H 6620 2846 50  0000 L CNN
+F 1 "100K" H 6620 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 6480 2800 50  0001 C CNN
+F 3 "~" H 6550 2800 50  0001 C CNN
+	1    6550 2800
 	1    0    0    -1  
+$EndComp
+Connection ~ 6150 3650
+Wire Wire Line
+	6150 3650 6550 3650
+Wire Wire Line
+	5250 2950 5750 2950
+$Comp
+L Transistor_FET:Si2319CDS Q1
+U 1 1 5EA05791
+P 5950 2850
+F 0 "Q1" V 6199 2850 50  0000 C CNN
+F 1 "Si2319CDS" V 6290 2850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 2775 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/66709/si2319cd.pdf" H 5950 2850 50  0001 L CNN
+	1    5950 2850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6150 3500 6250 3500
+Wire Wire Line
+	6150 3650 6150 3500
+Wire Wire Line
+	6250 3400 6150 3400
+Wire Wire Line
+	5350 3600 5600 3600
+Wire Wire Line
+	5350 3500 5350 3600
+Wire Wire Line
+	5200 3500 5350 3500
+Wire Wire Line
+	5350 3400 5200 3400
+Wire Wire Line
+	5350 3300 5350 3400
+Wire Wire Line
+	5600 3300 5350 3300
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E2E1CEE
+P 6450 3500
+F 0 "J1" H 6422 3382 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6422 3473 50  0000 R CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6450 3500 50  0001 C CNN
+F 3 "~" H 6450 3500 50  0001 C CNN
+	1    6450 3500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5E2E12D0
-P 5950 3750
-F 0 "BT1" H 6068 3846 50  0000 L CNN
-F 1 "Battery_Cell" H 6068 3755 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 5950 3810 50  0001 C CNN
-F 3 "~" V 5950 3810 50  0001 C CNN
-	1    5950 3750
+P 5600 3500
+F 0 "BT1" H 5718 3596 50  0000 L CNN
+F 1 "Battery_Cell" H 5718 3505 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 5600 3560 50  0001 C CNN
+F 3 "~" V 5600 3560 50  0001 C CNN
+	1    5600 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5E2E1CEE
-P 6600 3200
-F 0 "J1" H 6572 3082 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 6572 3173 50  0000 R CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 6600 3200 50  0001 C CNN
-F 3 "~" H 6600 3200 50  0001 C CNN
-	1    6600 3200
-	-1   0    0    1   
+L Connector:TestPoint TP1
+U 1 1 5EA46751
+P 5950 2650
+F 0 "TP1" H 6008 2768 50  0000 L CNN
+F 1 "TestPoint" H 6008 2677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6150 2650 50  0001 C CNN
+F 3 "~" H 6150 2650 50  0001 C CNN
+	1    5950 2650
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6550 3650 6550 2950
+$Comp
+L Regulator_Linear:AMS1117-3.3 U2
+U 1 1 5EA50985
+P 5950 3350
+F 0 "U2" H 5950 3592 50  0000 C CNN
+F 1 "AMS1117-3.3" H 5950 3501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5950 3550 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 6050 3100 50  0001 C CNN
+	1    5950 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 2650
+Connection ~ 6150 2650
+Wire Wire Line
+	6550 2650 6150 2650
+Wire Wire Line
+	6150 2650 5950 2650
+$Comp
+L Device:D D2
+U 1 1 5EA0E8EF
+P 6150 2800
+F 0 "D2" H 6150 2584 50  0000 C CNN
+F 1 "D" H 6150 2675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3650 5950 3650
+Wire Wire Line
+	6150 3250 6150 3400
+Connection ~ 5950 3650
+Wire Wire Line
+	5950 3650 6150 3650
+Wire Wire Line
+	6250 3350 6250 3250
+Wire Wire Line
+	6250 3250 6150 3250
+Wire Wire Line
+	5650 3350 5650 3100
+Wire Wire Line
+	5650 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 2950
+Connection ~ 6150 2950
 $EndSCHEMATC
