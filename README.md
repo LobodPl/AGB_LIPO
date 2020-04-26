@@ -1,4 +1,4 @@
-# AGB_LIPO
+# READ ME AGB_LIPO from makhowastaken
 
 LiPo adapter for Game Boy Advance. Same concept as my AGS adapters: https://github.com/makhowastaken/AGS_LIPO
 
@@ -11,3 +11,12 @@ I got my boards in and had to make some alterations to get them to fit better. I
 
 ![front](front.png)
 ![back](back.png)
+
+# MY Changes
+
+* Load Shareing circuit (using SI2301DS and 1N4001 and 100k Resistor)
+* Voltage Regulating (using AMS1117-3.3)
+* NO MORE DIODE LIMITING
+
+# TO FIX
+* GBA Low Battery Light
