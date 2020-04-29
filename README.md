@@ -1,6 +1,6 @@
 # READ ME AGB_LIPO from makhowastaken
 
-LiPo adapter for Game Boy Advance. Same concept as my AGS adapters: https://github.com/makhowastaken/AGS_LIPO
+LiPo adapter for Game Boy Advance.
 
 * Uses these battery terminals: https://www.aliexpress.com/item/32946601230.html
 * a standard TP4056 module (Micro USB or USB C): https://www.aliexpress.com/item/32649780468.html
