@@ -9,6 +9,15 @@ LiPo adapter for Game Boy Advance. Same concept as my AGS adapters: https://gith
 I got my boards in and had to make some alterations to get them to fit better. I'm still waiting on the terminals so I'll add a youtube video for instruction when I get everything in. 
 
 ![front](front.png)
+## Legend:
+* U1 - TP4056
+* U2 - AMS1117-3.3
+* Q1 - Si2301DS
+* R1 - 100K
+* R2 - 100
+* D1 - 1N4001
+* C1 - 22u TANTALUM
+* C2 - 10u TANTALUM
 ![back](back.png)
 
 # MY Changes
