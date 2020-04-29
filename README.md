@@ -13,9 +13,19 @@ I got my boards in and had to make some alterations to get them to fit better. I
 
 # MY Changes
 
-* Load Shareing circuit (using SI2301DS and 1N4001 and 100k Resistor)
-* Voltage Regulating (using AMS1117-3.3)
-* NO MORE DIODE LIMITING
+* Load Shareing circuit (using SI2301DS and 1N4001 and 100k Resistor).
+* Voltage Regulating (using AMS1117-3.3).
+* NO MORE DIODE LIMITING.
 
 # TO FIX
-* GBA Low Battery Light
+* GBA Low Battery Light.
+
+# CHANGELOG
+## >28.04.2020
+* Base concept.
+
+## 28.04.2020
+* Added 3.3V Regulator.
+
+## 29.04.2020
+* Fixed Regulator capacitors
