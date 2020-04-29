@@ -7,9 +7,9 @@ LiPo adapter for Game Boy Advance.
 * and pretty much whatever diode you can get your hands on: https://www.aliexpress.com/item/32664545131.html
 
 I got my boards in and had to make some alterations to get them to fit better. I'm still waiting on the terminals so I'll add a youtube video for instruction when I get everything in. 
-
+## Front:
 ![front](front.png)
-## Legend:
+
 * U1 - TP4056
 * U2 - AMS1117-3.3
 * Q1 - Si2301DS
@@ -18,6 +18,9 @@ I got my boards in and had to make some alterations to get them to fit better. I
 * D1 - 1N4001
 * C1 - 22u TANTALUM
 * C2 - 10u TANTALUM
+
+* Solder TP1 to VIN+ of TP4056
+## Back:
 ![back](back.png)
 
 # MY Changes
