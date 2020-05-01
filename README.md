@@ -11,13 +11,14 @@ I got my boards in and had to make some alterations to get them to fit better. I
 ![front](front.png)
 
 * U1 - TP4056
-* U2 - AMS1117-3.3
+* U2 - AP2114H-3.3TRG1
 * Q1 - Si2301DS
 * R1 - 100K
 * R2 - 100
 * D1 - 1N4001
-* C1 - 22u TANTALUM
-* C2 - 10u TANTALUM
+* C1 - 4,7u CERAMIC
+* C2 - 4,7u CERAMIC
+* C3 - 220u TANTALUM
 
 * Solder TP1 to VIN+ of TP4056
 ## Back:
@@ -40,4 +41,7 @@ I got my boards in and had to make some alterations to get them to fit better. I
 * Added 3.3V Regulator.
 
 ## 29.04.2020
-* Fixed Regulator capacitors
+* Fixed Regulator capacitors.
+
+## 01.05.2020
+* Full circuit redesign.
