@@ -75,6 +75,24 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_CP1
 #
 DEF Device_CP1 C 0 10 N N 1 F N
@@ -134,22 +152,28 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_AMS1117-3.3
+# Libraries_digikey-kicad-library-master_digikey-symbols_dk_PMIC-Voltage-Regulators-Linear_AP2114H-3_3TRG1
 #
-DEF Regulator_Linear_AMS1117-3.3 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_AMS1117-3.3" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 200 50 H I C CNN
-F3 "" 100 -250 50 H I C CNN
-ALIAS AP1117-18 AP1117-25 AP1117-33 AP1117-50 LD1117S33TR_SOT223 LD1117S12TR_SOT223 LD1117S18TR_SOT223 LD1117S25TR_SOT223 LD1117S50TR_SOT223 NCP1117-12_SOT223 NCP1117-1.5_SOT223 NCP1117-1.8_SOT223 NCP1117-2.0_SOT223 NCP1117-2.5_SOT223 NCP1117-2.85_SOT223 NCP1117-3.3_SOT223 NCP1117-5.0_SOT223 AMS1117-1.5 AMS1117-1.8 AMS1117-2.5 AMS1117-2.85 AMS1117-3.3 AMS1117-5.0
-$FPLIST
- SOT?223*TabPin2*
-$ENDFPLIST
+DEF Libraries_digikey-kicad-library-master_digikey-symbols_dk_PMIC-Voltage-Regulators-Linear_AP2114H-3_3TRG1 U 0 1 Y Y 1 F N
+F0 "U" -250 150 60 H V C CNN
+F1 "Libraries_digikey-kicad-library-master_digikey-symbols_dk_PMIC-Voltage-Regulators-Linear_AP2114H-3_3TRG1" -300 250 60 H V L BNN
+F2 "digikey-footprints:SOT-223" 200 200 60 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/AP2114.pdf" 200 300 60 H I L CNN
+F4 "AP2114H-3.3TRG1DICT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "AP2114H-3.3TRG1" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "https://www.diodes.com/assets/Datasheets/AP2114.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/diodes-incorporated/AP2114H-3.3TRG1/AP2114H-3.3TRG1DICT-ND/4505142" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 3.3V 1A SOT223" 200 1000 60 H I L CNN "Description"
+F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
-S -200 -200 200 75 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
+S -300 100 200 -300 0 1 0 f
+X GND 1 -100 -500 200 U 50 50 1 1 W
+X VOUT 2 400 0 200 L 50 50 1 1 O
+X IN 3 -500 0 200 R 50 50 1 1 I
+X VOUT 4 400 -100 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

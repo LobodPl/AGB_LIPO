@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name AGB_LIPO)(type Legacy)(uri ${KIPRJMOD}/AGB_LIPO.lib)(options "")(descr ""))
+  (lib (name Libraries_digikey-kicad-library-master_digikey-symbols_dk_PMIC-Voltage-Regulators-Linear)(type Legacy)(uri ${KIPRJMOD}/Libraries_digikey-kicad-library-master_digikey-symbols_dk_PMIC-Voltage-Regulators-Linear.lib)(options "")(descr ""))
 )
