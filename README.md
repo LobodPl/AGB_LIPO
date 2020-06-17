@@ -31,7 +31,7 @@ I got my boards in and had to make some alterations to get them to fit better. I
 # My Changes
 
 * Load Sharing.
-* Voltage Regulating to 3.2V.
+* Voltage Regulation to 3.2V.
 * GBA Low Battery Light trigered at LiPo 3,4V.
 
 
