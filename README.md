@@ -1,4 +1,4 @@
-# READ ME AGB_LIPO from makhowastaken
+# README AGB_LIPO from makhowastaken
 
 LiPo adapter for Game Boy Advance.
 
@@ -6,32 +6,34 @@ LiPo adapter for Game Boy Advance.
 * a standard TP4056 module (Micro USB or USB C): https://www.aliexpress.com/item/32649780468.html
 * and pretty much whatever diode you can get your hands on: https://www.aliexpress.com/item/32664545131.html
 
-I got my boards in and had to make some alterations to get them to fit better. I'm still waiting on the terminals so I'll add a youtube video for instruction when I get everything in. 
+I got my boards in and had to make some alterations to get them to fit better. I'm still waiting on the terminals so I'll add a youtube video for instruction when I get everything in.
+# My Project README
 ## Front:
 ![front](front.png)
-
-* U1 - TP4056
-* U2 - AP2114H-3.3TRG1
-* Q1 - Si2301DS
-* R1 - 100K
-* R2 - 100
-* D1 - 1N4001
-* C1 - 4,7u CERAMIC
-* C2 - 4,7u CERAMIC
-* C3 - 220u TANTALUM
 
 * Solder TP1 to VIN+ of TP4056
 ## Back:
 ![back](back.png)
 
-# MY Changes
+# Symbols
+* U1 - TP4056
+* U2 - TPS3700DDCR (Texas Intruments)
+* IC1 - LP38693MP-ADJ (Texas Intruments)
+* D1,D2 - 1N4001 or 1N4007
+* C1,C2,C3 - 10u CERAMIC(0603)
+* C4 - 220u TANTALUM(KEMET-B)
+* R1 - 470K(0603)
+* R2 - 62K(0805)
+* R3 - 1M(0603)
+* R4 - 270K(0805)
+* R5 - 240K(0805)
 
-* Load Shareing circuit (using SI2301DS and 1N4001 and 100k Resistor).
-* Voltage Regulating (using AMS1117-3.3).
-* NO MORE DIODE LIMITING.
+# My Changes
 
-# TO FIX
-* GBA Low Battery Light.
+* Load Shareing.
+* Voltage Regulating to 3.2V.
+* GBA Low Battery Light trigered at LiPo 3,4V.
+
 
 # CHANGELOG
 ## >28.04.2020
@@ -45,3 +47,6 @@ I got my boards in and had to make some alterations to get them to fit better. I
 
 ## 01.05.2020
 * Full circuit redesign.
+
+## 01.06.2020
+* One more time full circuit redesign.

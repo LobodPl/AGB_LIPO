@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name kiCad_mod)(type KiCad)(uri D:/kiCad_mod)(options "")(descr ""))
+  (lib (name KiCad_models)(type KiCad)(uri D:/KiCad_models)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri D:/KiCad_models/SamacSys_Parts.pretty)(options "")(descr ""))
 )
