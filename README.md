@@ -19,7 +19,7 @@ I got my boards in and had to make some alterations to get them to fit better. I
 ![back](back.png)
 
 # Symbols
-* U1 - TP4056
+* U1 - TP4056(Have to be soldered UpsideDown)
 * U2 - TPS3700DDCR (Texas Intruments)
 * IC1 - LP38693MP-ADJ (Texas Intruments)
 * D1,D2 - 1N4001 or 1N4007
