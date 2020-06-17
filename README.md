@@ -8,6 +8,9 @@ LiPo adapter for Game Boy Advance.
 
 I got my boards in and had to make some alterations to get them to fit better. I'm still waiting on the terminals so I'll add a youtube video for instruction when I get everything in.
 # My Project README
+
+## Order at OSHPARK: https://oshpark.com/shared_projects/AJPIjHIz
+
 ## Front:
 ![front](front.png)
 
