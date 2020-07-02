@@ -28,8 +28,7 @@ I got my boards in and had to make some alterations to get them to fit better. I
 * R1 - 470K(0603)
 * R2 - 62K(0805)
 * R3 - 1M(0603)
-* R4 - 270K(0805)
-* R5 - 240K(0805)
+* R4,R5 - 240K(0805)
 
 # My Changes
 
