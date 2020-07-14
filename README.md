@@ -39,14 +39,15 @@ I got my boards in and had to make some alterations to get them to fit better. I
   https://mouser.com/ProductDetail/Panasonic/ERJ-UP3D1004V?qs=sGAEpiMZZMtlubZbdhIBINZyO39%252BOXIfwSlLGtGqBNU%3D (0,35$)
 * R4,R5 - 240K(0805)
   https://mouser.com/ProductDetail/Panasonic/ERJ-PB6B2403V?qs=sGAEpiMZZMtlubZbdhIBIMNI7sOfyRuJn5D0R%252BVWI38%3D (0,72$)
-
+* BT1 - 103048 LiPo Cell
+  https://pl.aliexpress.com/item/33000132990.html (3$)
 # Cost
 
   PCB manufacturing costs: **2$** on JLCPCB or **9$** on OSHPARK.
   
-  This project with **JLCPCB** will cost you ~10$.
+  This project with **JLCPCB** will cost you ~13$.
   
-  With **OSHPARK** you will pay ~17$.
+  With **OSHPARK** you will pay ~20$.
 
 # My Changes
 
