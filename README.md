@@ -70,4 +70,7 @@ I got my boards in and had to make some alterations to get them to fit better. I
 * Full circuit redesign.
 
 ## 01.06.2020
-* One more time full circuit redesign.
+* One more full circuit redesign.
+
+## 17.06.2020
+* Finall release. PCB is now working corectly.
